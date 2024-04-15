@@ -2,13 +2,14 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
 ?><?$APPLICATION->IncludeComponent(
-	"dv:usergroup",
-	".default",
+	"dv:complexusergroup",
+	"",
 	Array(
-		"CACHE_TIME" => "36000",
+		"CACHE_TIME" => "0",
 		"CACHE_TYPE" => "A",
-		"COMPONENT_TEMPLATE" => ".default",
-		"SET_TITLE" => "Y",
-		"TITLE" => "заголовок1"
+		"SEF_FOLDER" => "/test/",
+		"SEF_MODE" => "Y",
+		"SEF_URL_TEMPLATES" => Array("detail"=>"#GROUP_ID#/","list"=>""),
+		"TITLE" => ""
 	)
-);?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -24,4 +24,12 @@ $arUrlRewrite=array (
     'PATH' => '/news/index.php',
     'SORT' => 100,
   ),
+  3 => 
+  array (
+    'CONDITION' => '#^/test/#',
+    'RULE' => '',
+    'ID' => 'dv:complexusergroup',
+    'PATH' => '/test.php',
+    'SORT' => 100,
+  ),
 );
